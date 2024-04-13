@@ -55,9 +55,6 @@ function submitAnswer() {
 
     if (userAnswer === correctAnswer) {
         score++;
-        document.getElementById("quiz-feedback").textContent = "Correct!";
-    } else {
-        document.getElementById("quiz-feedback").textContent = "Incorrect.";
     }
 
     // Show next button
@@ -75,8 +72,6 @@ function nextQuestion() {
         document.getElementById("next-btn").style.display = "none";
         // Show submit button
         document.getElementById("submit-btn").style.display = "block";
-        // Clear feedback message
-        document.getElementById("quiz-feedback").textContent = "";
     } else {
         // Quiz ended
         document.getElementById("quiz-item").innerHTML = `<h2>Quiz Completed!</h2><p>Your score: ${score}/${quizData.length}</p>`;
@@ -86,8 +81,6 @@ function nextQuestion() {
         document.getElementById("submit-btn").style.display = "none";
         // Show retake button
         document.getElementById("retake-btn").style.display = "block";
-        // Clear feedback message
-        document.getElementById("quiz-feedback").textContent = "";
     }
 }
 
