@@ -25,7 +25,6 @@ let quizData = [
 
 // Variables to track quiz state
 let currentQuestion = 0;
-let score = 0;
 quizData = randomizeQuestions(quizData);
 
 // Function to load current question
@@ -53,10 +52,6 @@ function submitAnswer() {
     const userAnswer = parseInt(selectedAnswer.value);
     const correctAnswer = quizData[currentQuestion].correctAnswer;
 
-    if (userAnswer === correctAnswer) {
-        score++;
-    }
-
     // Show next button
     document.getElementById("next-btn").style.display = "block";
     // Hide submit button
@@ -73,8 +68,6 @@ function nextQuestion() {
         // Show submit button
         document.getElementById("submit-btn").style.display = "block";
     } else {
-        // Quiz ended
-        document.getElementById("quiz-item").innerHTML = `<h2>Quiz Completed!</h2><p>Your score: ${score}/${quizData.length}</p>`;
         // Hide next button
         document.getElementById("next-btn").style.display = "none";
         // Hide submit button
