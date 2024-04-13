@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyinkansola GMC Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Oyinkansola GMC Quiz App</h1>
+
+    <header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="grid-quiz-items">
+
+            <div class="quiz-item-container">
+
+                <div class="quiz-item" id="quiz-item">
+                    <!-- Questions and Answers will be inserted here dynamically -->
+                </div>
+
+                <div id="quiz-feedback" class="quiz-feedback">
+                    <!-- Feedback message will be inserted here dynamically -->
+                </div>
+
+            </div>
+
+            <div class="all-quiz-button">
+                <button id="submit-btn" class="quiz-button">Submit Answer</button>
+                <button id="next-btn" style="display: none;" class="quiz-button">Next Question</button>
+                <button id="retake-btn" style="display: none;" class="quiz-button">Retake Quiz</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Oyin - Yemi Copyright</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
