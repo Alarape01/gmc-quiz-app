@@ -55,9 +55,9 @@ function submitAnswer() {
 
     if (userAnswer === correctAnswer) {
         score++;
-        document.getElementById("quiz-feedback").textContent = "Correct!";
+        document.getElementById("quiz-feedback").textContent = "Correct! 👍";
     } else {
-        document.getElementById("quiz-feedback").textContent = "Incorrect.";
+        document.getElementById("quiz-feedback").textContent = "Incorrect. 👎";
     }
 
     // Show next button
